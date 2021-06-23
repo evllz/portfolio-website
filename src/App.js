@@ -5,19 +5,22 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import profile from "./data/profile.jpg";
 
 export default function App() {
   return (
     <div className="maincontainer">
       <div className="bio">
         <div className="imageContainer">
-          <div
+          <img
+            title="Erick Villegaz"
+            src={profile}
             style={{
               backgroundColor: "gray",
               height: "300px",
               width: "300px",
               borderRadius: "50%",
-            }}></div>
+            }}></img>
         </div>
 
         <div className="textContainer">

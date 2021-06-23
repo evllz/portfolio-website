@@ -8,14 +8,14 @@ export const skillset = [
   { skill: "SQL", icon: "fas fa-database", id: "7" },
   { skill: "Python", icon: "fab fa-python", id: "8" },
 ];
-
+const project1 = require("./project1.jpg");
 export const projects = [
   {
     title: "Don't Let It Die API",
     description:
       "Users can create an account and start adding the info of their green little friends, as many as they want! And keep track of how often they need to water each one of them.",
     link: "https://github.com/water-my-plants-tt-webpt-172/back-end",
-    image: "./image.jpg",
+    image: project1,
     id: "1",
   },
 ];
