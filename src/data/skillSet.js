@@ -1,5 +1,5 @@
 export const skillset = [
-  { skill: "JavaScript", icon: "fab fa-html5", id: "1" },
+  { skill: "HTML", icon: "fab fa-html5", id: "1" },
   { skill: "CSS", icon: "fab fa-css3-alt", id: "2" },
   { skill: "JavaScript", icon: "fab fa-js-square", id: "3" },
   { skill: "React", icon: "fab fa-react", id: "4" },
