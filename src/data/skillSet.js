@@ -9,7 +9,7 @@ export const skillset = [
   { skill: "Python", icon: "fab fa-python", id: "8" },
 ];
 const project1 = require("./project1.jpg");
-const project2 = required("./project2.png");
+const project2 = require("./project2.png");
 export const projects = [
   {
     title: "Don't Let It Die API",
