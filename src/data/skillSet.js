@@ -9,6 +9,7 @@ export const skillset = [
   { skill: "Python", icon: "fab fa-python", id: "8" },
 ];
 const project1 = require("./project1.jpg");
+const project2 = required("./project2.jpg");
 export const projects = [
   {
     title: "Don't Let It Die API",
@@ -17,5 +18,13 @@ export const projects = [
     link: "https://github.com/water-my-plants-tt-webpt-172/back-end",
     image: project1,
     id: "1",
+  },
+    {
+    title: "Water Your Plants",
+    description:
+      "Vue 3 CRUD UI where users can keep track of the plants they have.",
+    link: "https://github.com/water-my-plants-tt-webpt-172/back-end",
+    image: project2,
+    id: "2",
   },
 ];
