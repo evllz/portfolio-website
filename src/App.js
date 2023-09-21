@@ -1,6 +1,6 @@
 import "./styles.css";
 import Navbar from "./components/Navbar";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";
@@ -32,12 +32,12 @@ export default function App() {
       <Router>
         <Navbar />
         <div className="App">
-          <Switch>
+          <Routes>
             <Route exact path="/about" component={About} />
             <Route exact path="/contact" component={Contact} />
             <Route exact path="/projects" component={Projects} />
             <Route exact path="/" component={Skills} />
-          </Switch>
+          </Routes>
         </div>
       </Router>
     </div>
