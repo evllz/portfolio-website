@@ -1,3 +1,8 @@
+img {
+  object-fit: contain;
+  border-radius: 50%;
+}
+
 .App {
   font-family: sans-serif;
   text-align: center;
@@ -20,6 +25,13 @@ a {
   text-decoration: none;
 }
 
+.imageContainer img {
+  height: 100%;
+  width: 100%;
+}
+.imageContainer {
+  height: 300px;
+}
 .textContainer {
   width: 50%;
   display: felx;
@@ -30,4 +42,15 @@ a {
 .maincontainer {
   width: 90%;
   padding-left: 5%;
+}
+
+@media screen and (max-width: 360px) {
+  .imageContainer {
+    height: 200px;
+    width: 200px;
+  }
+  .bio {
+    flex-direction: column;
+    align-items: center;
+  }
 }

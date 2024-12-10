@@ -4,10 +4,7 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 
-
 export default function SkillCard(props) {
-  const classes = useStyles();
-
   return (
     <div style={{ margin: "20px" }}>
       <Box
@@ -20,7 +17,7 @@ export default function SkillCard(props) {
           },
         }}
       >
-        <Card className={classes.root}>
+        <Card>
           <CardContent>
             <span style={{ fontSize: "100px", color: "#4153AF" }}>
               <i className={props.icon} />
