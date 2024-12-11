@@ -1,6 +1,7 @@
+import React from "react";
 import "./styles.css";
 import Navbar from "./components/Navbar";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";
@@ -15,31 +16,26 @@ export default function App() {
           <img
             title="Erick Villegaz"
             src={profile}
-            style={{
-              backgroundColor: "gray",
-              height: "300px",
-              width: "300px",
-              borderRadius: "50%",
-            }}></img>
+            alt="profile"
+            className="profilePicture"
+          ></img>
         </div>
 
         <div className="textContainer">
           <h1>Erick Villgaz</h1>
-          <h2>Full Stack Dev</h2>
-          <p>Life is like an RPG, grinding that EXP is part of it!</p>
+          <h2>Full Stack Web Dev</h2>
+          <p>Life is like an RPG, grinding experience is part of it!</p>
         </div>
       </div>
-      <Router>
-        <Navbar />
-        <div className="App">
-          <Switch>
-            <Route exact path="/about" component={About} />
-            <Route exact path="/contact" component={Contact} />
-            <Route exact path="/projects" component={Projects} />
-            <Route exact path="/" component={Skills} />
-          </Switch>
-        </div>
-      </Router>
+      <Navbar />
+      <div>
+        <Routes>
+          <Route exact path="/about" element={<About />} />
+          <Route exact path="/contact" element={<Contact />} />
+          <Route exact path="/projects" element={<Projects />} />
+          <Route exact path="/" element={<Skills />} />
+        </Routes>
+      </div>
     </div>
   );
 }
