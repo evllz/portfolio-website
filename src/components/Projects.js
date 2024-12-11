@@ -7,8 +7,8 @@ export default function Projects() {
     <div
       style={{
         display: "flex",
-        flexWrap: "wrap",
-        justifyContent: "space-evenly",
+        flexFlow:'column',
+        justifyContent: "center",
         width: "80%",
         paddingLeft: "10%",
       }}>

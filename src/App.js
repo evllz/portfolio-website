@@ -23,11 +23,10 @@ export default function App() {
 
         <div className="textContainer">
           <h1>Erick Villgaz</h1>
-          <h2>Full Stack Dev</h2>
-          <p>Life is like an RPG, grinding that EXP is part of it!</p>
+          <h2>Full Stack Web Dev</h2>
+          <p>Life is like an RPG, grinding experience is part of it!</p>
         </div>
       </div>
-      {/* <BrowserRouter> */}
       <Navbar />
       <div>
         <Routes>
@@ -37,7 +36,6 @@ export default function App() {
           <Route exact path="/" element={<Skills />} />
         </Routes>
       </div>
-      {/* </BrowserRouter> */}
     </div>
   );
 }

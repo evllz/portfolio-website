@@ -11,7 +11,7 @@ import Typography from "@mui/material/Typography";
 export default function ProjectCard(props) {
   console.log(props);
   return (
-    <div style={{ margin: "20px" }}>
+    
       <Box
         sx={{
           root: {
@@ -20,6 +20,7 @@ export default function ProjectCard(props) {
           media: {
             height: 175,
           },
+          margin: 2
         }}
       >
         <Card>
@@ -35,7 +36,7 @@ export default function ProjectCard(props) {
 
           <CardActions>
             <Button size="small" color="primary">
-              <span style={{ fontSize: "30px", color: "black" }}>
+              <span style={{ fontSize: "2rem", color: "black" }}>
                 <a href={props.link}>
                   <i className="fab fa-github" />
                 </a>
@@ -44,6 +45,6 @@ export default function ProjectCard(props) {
           </CardActions>
         </Card>
       </Box>
-    </div>
+
   );
 }

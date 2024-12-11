@@ -6,7 +6,7 @@ import Box from "@mui/material/Box";
 
 export default function SkillCard(props) {
   return (
-    <div style={{ margin: "20px" }}>
+    
       <Box
         sx={{
           root: {
@@ -15,19 +15,20 @@ export default function SkillCard(props) {
           media: {
             height: 140,
           },
+          margin: 2
         }}
       >
-        <Card>
+        <Card sx={{width: 150}}>
           <CardContent>
-            <span style={{ fontSize: "100px", color: "#4153AF" }}>
+            <span style={{ fontSize: "5rem", color: "#4153AF", paddingLeft:"1.5rem" }}>
               <i className={props.icon} />
             </span>
-            <Typography gutterBottom variant="h5" component="h2">
+            <Typography gutterBottom variant="h5" component="h2" style={{textAlign:'center'}}>
               {props.skill}
             </Typography>
           </CardContent>
         </Card>
       </Box>
-    </div>
+
   );
 }

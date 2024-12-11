@@ -1,12 +1,17 @@
 export const skillset = [
-  { skill: "HTML", icon: "fab fa-html5", id: "1" },
-  { skill: "CSS", icon: "fab fa-css3-alt", id: "2" },
-  { skill: "JavaScript", icon: "fab fa-js-square", id: "3" },
-  { skill: "React", icon: "fab fa-react", id: "4" },
-  { skill: "Vue", icon: "fab fa-vuejs", id: "5" },
-  { skill: "Node", icon: "fab fa-node-js", id: "6" },
-  { skill: "SQL", icon: "fas fa-database", id: "7" },
-  { skill: "Python", icon: "fab fa-python", id: "8" },
+  { id: 1, skill: "HTML", icon: "devicon-html5-plain" },
+  { id: 2, skill: "CSS", icon: "devicon-css3-plain" },
+  { id: 3, skill: "JavaScript", icon: "devicon-javascript-plain" },
+  { id: 4, skill: "React", icon: "devicon-react-original" },
+  { id: 5, skill: "Vue", icon: "devicon-vuejs-plain" },
+  { id: 6, skill: "Node", icon: "devicon-nodejs-plain" },
+  { id: 7, skill: "Express", icon: "devicon-express-original" },
+  { id: 8, skill: "SQL", icon: "devicon-mysql-plain" },
+  { id: 9, skill: "MongoDB", icon: "devicon-mongodb-plain" },
+  { id: 10, skill: "Kafka", icon: "devicon-apachekafka-original" },
+  { id: 11, skill: "Docker", icon: "devicon-docker-plain" },
+  { id: 12, skill: "Kubernetes", icon: "devicon-kubernetes-plain" },
+  { id: 12, skill: "GCP", icon: "devicon-googlecloud-plain" },
 ];
 const project1 = require("./project1.jpg");
 const project2 = require("./project2.png");
@@ -19,7 +24,7 @@ export const projects = [
     image: project1,
     id: "1",
   },
-    {
+  {
     title: "Water Your Plants",
     description:
       "Vue 3 CRUD UI where users can keep track of the plants they have.",
